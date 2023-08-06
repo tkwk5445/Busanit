@@ -1,0 +1,19 @@
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: hello
+spec:
+  schedule: "*/1 * * * *" # schedule 지정
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          containers:
+          - name: hello
+            image: busybox
+            imagePullPolicy: IfNotPresent # 서버에 없을때만 내려받음
+            command:
+            - /bin/sh
+            - -c
+            - date; echo Hello from the K8s cluster
+          restartPolicy: OnFailure #컨테이너에서 실행된 프로세스가 실패할 때에만 다시 시작
