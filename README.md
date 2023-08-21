@@ -1,1 +1,1 @@
-# BusanIT-academy AWS course (3.28 ~ 10.16)
+# BusanIT Academy - AWS course (3.28 ~ 10.16)
