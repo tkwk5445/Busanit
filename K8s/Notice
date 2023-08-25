@@ -1,6 +1,0 @@
-// 초기 설치 (vagrant up -> vagrant provision) 이후 Master node 에서
-// kubectl get nodes 시 "the connection to the server localhost:8080 was refused - did you specify the right host or port? " 라고 뜬다면
-
-$ mkdir -p $HOME/.kube
-$ sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
-$ sudo chown $(id -u):$(id -g) $HOME/.kube/config
