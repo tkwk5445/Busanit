@@ -1,4 +1,4 @@
-print('-' * 5, 'for문 사용하기', '-' * 5)
+print("-" * 5, "for문 사용하기", "-" * 5)
 
 # 파이썬의 for문
 # 파이썬의 for문은 다른 언어의 for ~ in, for each문과 동일한 기능을 하는 반복문
@@ -13,12 +13,12 @@ print('-' * 5, 'for문 사용하기', '-' * 5)
 
 
 # 리스트 선언
-test_list = ['one', 'two', 'three']
+test_list = ["one", "two", "three"]
 
 for i in test_list:
     print(i)
 
-print('-' * 5, 'while문으로 출력하기', '-' * 5)
+print("-" * 5, "while문으로 출력하기", "-" * 5)
 
 count = 0
 
@@ -30,16 +30,16 @@ while count < len(test_list):
 list1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 for i in list1:
-    print(f'변수 i의 값 : {i}')
+    print(f"변수 i의 값 : {i}")
 
 # 리스트를 for문에 직접 입력하여 출력
 for i in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]:
-    print(f'변수 i의 값 : {i}')
+    print(f"변수 i의 값 : {i}")
 
 # while문으로 1 ~ 10까지 출력
 count = 1
 while count <= 10:
-    print(f'count의 값 : {count}')
+    print(f"count의 값 : {count}")
     count += 1
 
 # range (시작숫자, 종료숫자) : 숫자 리스트를 자동 생성하는 함수
@@ -49,33 +49,33 @@ while count <= 10:
 # 종료숫자는 리스트에 포함되지 않음 (종료숫자 -1 까지위 리스트 생성)
 # 실제 리스트로 변환하고자 할 경우 list() 함수 사용
 print(range(10))
-print(range(5,10))
-print(list(range(5,10)))
+print(range(5, 10))
+print(list(range(5, 10)))
 
 
 for i in range(10):
-    print(f'i의 값 : {i}')
+    print(f"i의 값 : {i}")
 
 
 for i in range(5, 10):
-    print(f'i의 값 : {i}')
+    print(f"i의 값 : {i}")
 
 
 # 문제 1) for 문을 사용하여 1 ~ 10까지의 합 구하기
 hap1 = 0
 for i in range(1, 11):
     hap1 += i
-print(f'1부터 10까지의 합 : {hap1}')
+print(f"1부터 10까지의 합 : {hap1}")
 
 # 문제 2) for문과 range를 사용하여 50 ~ 100까지의 총 합 구하기
 hap2 = 0
 for i in range(50, 101):
     hap2 += i
-print(f'1부터 10까지의 합 : {hap2}')
+print(f"1부터 10까지의 합 : {hap2}")
 
 # 문제 3) for문과 while문을 사용하여 구구단 출력
 dan = 2  # 출력할 단을 지정
 
 for i in range(1, 10):  # 1부터 9까지 반복
     result = dan * i
-    print(f'{dan} x {i} = {result}')
+    print(f"{dan} x {i} = {result}")
